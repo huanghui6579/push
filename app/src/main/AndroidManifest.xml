@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fxhl.myapplication" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".MyApp"
+        android:theme="@style/AppTheme.NoActionBar" >
+        <activity
+            android:name=".SplashTestActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme_Umeng_Push_Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58ccea1d8f4a9d747d0010e7">
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="6fcaa7bb9895cf5b2e34c566d5a03fd8">
+        </meta-data>
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="UMENG" >
+        </meta-data>
+
+    </application>
+
+</manifest>
